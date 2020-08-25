@@ -16,6 +16,8 @@ Thumbs.db
 /vendor
 /vagrant
 /runtime
+/web/vue
+/web/fonts
 .env
 /frontend/node_modules
 

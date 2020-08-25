@@ -20,6 +20,7 @@ mix.js('src/app.js', '../web/vue/')
             open:false
         })
     .sourceMaps(false);
+mix.copy('../web/vue/fonts', '../web/fonts');
 mix.webpackConfig({
     output: {
         publicPath: '/vue/',
