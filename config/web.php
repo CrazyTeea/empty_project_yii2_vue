@@ -18,7 +18,7 @@ $config = [
         'admin' => [
             'class' => 'mdm\admin\Module',
             'layout' => 'left-menu',
-            'mainLayout' => '@app/views/layouts/main.php',
+            'mainLayout' => '@app/views/layouts/admin.php',
             'controllerMap' => [
                 'assignment' => [
                     'class' => 'mdm\admin\controllers\AssignmentController',
@@ -30,6 +30,11 @@ $config = [
     'components' => [
         'assetManager' => [
             'appendTimestamp' => true,
+            'bundles' => [
+                'yii\web\JqueryAsset' => false,
+                'yii\bootstrap4\BootstrapPluginAsset' => false,
+                'yii\bootstrap4\BootstrapAsset' => false,
+            ],
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
